@@ -1,0 +1,14 @@
+
+
+
+
+use("grades");
+db.grades.insertOne(
+  { "_id" : 2, "item" : "def", "price" : 50, "quantity" : 2, "date" : new Date("2014-03-01T08:00:00Z")}
+);
+
+
+use("grades");
+db.grades.findOne(
+  { "_id" : 2 }
+);
